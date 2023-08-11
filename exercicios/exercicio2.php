@@ -7,7 +7,7 @@
 
     <!-- CSS Interno -->
     <style>
-        .destaque {color: red;}
+        .destaque {color: purple;}
         .azul {color: blue;}
     </style>
 </head>
@@ -21,8 +21,8 @@
     echo "Chama Sesi-Senai !";
 
     /* Geração de texto estruturado (com tags, atributos) */
-    echo "<h2>Gerando <span class='destaque' > HTML</span> através do PHP. </h2>"; 
-    echo "<h2>Gerando <span class='destaque' > HTML</span> através do PHP. </h2>"; 
+    echo "<h2>Gerando <span class='azul' > HTML</span> através do PHP. </h2>"; 
+    echo "<h2>Gerando <span class='azul' > HTML</span> através do PHP. </h2>"; 
 
     ?>
 
