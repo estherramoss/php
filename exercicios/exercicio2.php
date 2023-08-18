@@ -9,11 +9,12 @@
     <style>
         .destaque {color: purple;}
         .azul {color: blue;}
+        .vermelho {color: red;}
     </style>
 </head>
 <body>
     <h1 class="destaque">Trabalhando com PHP</h1>
-    <p>Programador: Esther Bocchini</p>
+    <p class="vermelho">Programador: Esther Bocchini</p>
     <hr>
 
     <?php
@@ -27,12 +28,12 @@
     ?>
 
     <h1>HTML e PHP mesclados</h1>
-    <p>Parágrafos</p>
+    <p class="vermelho">Parágrafos</p>
 
     <?php
       $linguagem = "Linguagem PHP";
     ?>
-    <p>Parágrafo mesclando HTML com <?=$linguagem?> </p>
+    <p class="vermelho">Parágrafo mesclando HTML com <?=$linguagem?> </p>
     
 </body>
 </html>
