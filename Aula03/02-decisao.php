@@ -72,8 +72,25 @@
 
     <!-- Criar aqui seu programa PHP -->
     
-    
-    <hr>
+             <?php
+
+         $a = 5;
+
+        if ($a > 1) {
+         echo "Maior que 1";
+        } 
+     ?>
+<br>
+
+<?php
+    $a = 5;
+
+    if ($a > 1) 
+     echo "Maior que 1";
+    ?>
+       
+
+            <hr>
     
     <!-- ___________________________________________________________________ -->
     
@@ -88,12 +105,12 @@
     </ul>
     
     <br>
-    <h4>&nbsp;if ( comparação ) {</h4>
+    <h4>&nbsp;if ( comparação ) </h4>
     <h4>&emsp;comando para comparação verdadeira</h4>
     <h4>&emsp;Se necessário aninhar, usar if simples ou composto</h4>
-    <h4>&nbsp;else {</h4>
+    <h4>&nbsp;else </h4>
     <h4>&emsp;comando para comparação falsa.</h4>
-    <h4>&nbsp;}</h4>
+    <h4>&nbsp;</h4>
     <hr>
 
     <p>&nbsp;Criar um programa PHP que gere saída no modo composto obedecendo a seguinte regra de negócio:</p>
@@ -122,6 +139,22 @@
 
     <!-- Criar aqui seu programa PHP -->
 
+        <?php
+
+        $produto = 'Ultrabook ASUS';
+        $EstoqueAtual = 0;
+        $EstoqueMinimo = 14;
+
+        echo "<h3> $produto </h3>";
+
+        if ($EstoqueAtual < $EstoqueMinimo) { //true
+        echo "<div class= 'repor' > É necessário comprar </div>";
+        }
+
+        else {
+        echo "<div class= 'ok'> Estoque ok </div>";
+        }
+    ?>
     
     <hr>
 
@@ -139,15 +172,15 @@
     </ul>
     
     <br>
-    <h4>&nbsp;if ( comparação ) {</h4>
+    <h4>&nbsp;if ( comparação ) </h4>
     <h4>&emsp;comando para 1ª comparação verdadeira;</h4>
-    <h4>&nbsp;elseif ( comparação ) {</h4>
+    <h4>&nbsp;elseif ( comparação ) </h4>
     <h4>&emsp;comando para 2ª comparação verdadeira;</h4>
-    <h4>&nbsp;elseif ( comparação ) {</h4>
+    <h4>&nbsp;elseif ( comparação ) </h4>
     <h4>&emsp;comando para 3ª comparação verdadeira;</h4>
-    <h4>&nbsp;else {</h4>
+    <h4>&nbsp;else </h4>
     <h4>&emsp;comando para comparação falsa.;</h4>
-    <h4>&nbsp;}</h4>
+    <h4>&nbsp;</h4>
     <hr>
 
     <p>&nbsp;Criar um programa PHP que gere saída no modo encadeado obedecendo a seguinte regra de negócio:</p>
@@ -168,6 +201,31 @@
     <hr>
     
     <!-- Criar aqui seu programa PHP -->
+
+    Lista de opções
+    1- pastel 
+    2- Pizza
+    3- Esfiha
+
+    <?php
+    //Criar variável
+    $opção = 1;
+
+    //Criar a comparação composta
+    if ($opção == 1) {
+        $opçãoEscolhida = "Pastel";
+    }  elseif ($opção == 2) {
+        $opçãoEscolhida = "Pizza";
+    }   elseif ($opção == 3) {
+        $opçãoEscolhida = "Esfiha";
+    }   else {
+        $opçãoEscolhida = "Opção Inválida";
+    }
+
+    echo "<P>$opçãoEscolhida</p>";
+
+    ?>
+        
     
     <hr>
 
@@ -188,12 +246,12 @@
     </ul>
     
     <br>
-    <h4>&nbsp;switch ( escolha dentro da variável ) {</h4>
+    <h4>&nbsp;switch ( escolha dentro da variável ) </h4>
     <h4>&emsp;case 1: comando para 1ª escolha; break;</h4>
     <h4>&emsp;case 2: comando para 2ª escolha; break;</h4>
     <h4>&emsp;case 3: comando para 3ª escolha; break;</h4>
     <h4>&emsp;default: avisar usuário; break;</h4>
-    <h4>&nbsp;}</h4>
+    <h4>&nbsp;</h4>
     <h4>&nbsp;exibir informação conforme opção escolhida.</h4>
     <hr>
 
@@ -202,6 +260,16 @@
     <hr>
 
     <!-- Criar aqui seu programa PHP -->
+    <?php
+    switch ($opção) {
+        case 1: $pedido = "Pastel"; break;
+        case 2: $pedido = "Pizza"; break;
+        case 3: $pedido = "Esfiha"; break;
+        default: $pedido = "Opção Inválida"; break;
+    }
+
+    echo "<p>$pedido</p>";
+    ?>
     
     
     <!-- Rodapé -->
